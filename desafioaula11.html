@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio aula 11 </title>
+</head>
+<body>
+    <h1> Qual a nacionalidade ? </h1>
+   Qual a sua nacionalidade <input type="text" id="campo">
+    <input type="button" value="Verificar" onclick="comparar()">
+
+    <div id="resultado">
+    </div>
+
+    <script>
+        function comparar() {
+        var paiss = window.document.querySelector('input#campo').value
+        var res = window.document.querySelector('div#resultado')
+        res.innerHTML = `<p>Sua nacionalidade atual é de <strong>${paiss}</strong> </p>`
+        
+        if (paiss == 'Brasil') { 
+            res.innerHTML += `<p>Você é Brasileiro </p>`}
+        else {
+            res.innerHTML += `<p>Você é Estrangeiro </p>`}
+              
+        res.innerHTML += `<p>Sua nacionalidadeee atual é de <strong>${paiss}</strong> </p>`
+        }
+    </script>
+</body>
+</html>
